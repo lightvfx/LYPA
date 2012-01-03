@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1263</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_10">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="margin">
+    <number>2</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="margin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="refreshDB_pushButton">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>RefreshDB</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_6" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QSplitter" name="splitter_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QWidget" name="widget_4" native="true">
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <property name="spacing">
+                <number>2</number>
+               </property>
+               <property name="margin">
+                <number>2</number>
+               </property>
+               <item>
+                <widget class="QTreeWidget" name="SessionSelectTreeWidget">
+                 <property name="tabKeyNavigation">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <property name="itemsExpandable">
+                  <bool>false</bool>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="animated">
+                  <bool>true</bool>
+                 </property>
+                 <property name="allColumnsShowFocus">
+                  <bool>true</bool>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>Session Name</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>date</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="widget_5" native="true">
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <property name="spacing">
+                <number>2</number>
+               </property>
+               <property name="margin">
+                <number>2</number>
+               </property>
+               <item>
+                <widget class="QTreeWidget" name="SessionTimeLine">
+                 <property name="tabKeyNavigation">
+                  <bool>true</bool>
+                 </property>
+                 <property name="dragEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="dragDropOverwriteMode">
+                  <bool>false</bool>
+                 </property>
+                 <property name="dragDropMode">
+                  <enum>QAbstractItemView::InternalMove</enum>
+                 </property>
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <property name="uniformRowHeights">
+                  <bool>true</bool>
+                 </property>
+                 <property name="itemsExpandable">
+                  <bool>false</bool>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="animated">
+                  <bool>true</bool>
+                 </property>
+                 <property name="allColumnsShowFocus">
+                  <bool>true</bool>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>Dailie Name</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Load Status</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>In</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Out</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Cut In</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Cut Out</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Comment</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QFormLayout" name="formLayout">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+             </property>
+             <item row="0" column="1">
+              <widget class="QGroupBox" name="LoadGroupBox">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16775</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>LOAD</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <property name="spacing">
+                 <number>4</number>
+                </property>
+                <property name="margin">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="LoadPushButton">
+                  <property name="text">
+                   <string>LOAD</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="LoadFpPushButton">
+                  <property name="text">
+                   <string>LOAD_FP</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="DiskCachePushButton">
+                  <property name="text">
+                   <string>DISK CACHE</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_2">
+                  <property name="text">
+                   <string>LOAD PROXY</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QGroupBox" name="SessionGroupbox">
+               <property name="title">
+                <string>CREATE</string>
+               </property>
+               <layout class="QFormLayout" name="formLayout_2">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="text">
+                   <string>Create new session</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QDateEdit" name="dateEdit">
+                  <property name="calendarPopup">
+                   <bool>true</bool>
+                  </property>
+                  <property name="currentSectionIndex">
+                   <number>0</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLineEdit" name="lineEdit"/>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>session name</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QGroupBox" name="groupBox">
+               <property name="title">
+                <string>DataBase</string>
+               </property>
+               <layout class="QFormLayout" name="formLayout_3">
+                <property name="fieldGrowthPolicy">
+                 <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                </property>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>refreshDB_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>refreshCal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>refreshCal()</slot>
+ </slots>
+</ui>

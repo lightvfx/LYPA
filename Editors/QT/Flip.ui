@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1197</width>
+    <height>944</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="MainWidget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="GLLayout"/>
+         </item>
+         <item>
+          <widget class="QWidget" name="InfoWidget" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0,0,0);
+border: 1px solid;
+border-top-color:  rgb(50,50,50);
+</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <property name="margin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="3" column="6">
+             <widget class="QLabel" name="ExpLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(150,150,150);</string>
+              </property>
+              <property name="text">
+               <string>Exp:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="7">
+             <widget class="QLabel" name="RLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(200,0,0);</string>
+              </property>
+              <property name="text">
+               <string>R:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="8">
+             <widget class="QLabel" name="GLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,200,0);</string>
+              </property>
+              <property name="text">
+               <string>G:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="9">
+             <widget class="QLabel" name="BLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,200);</string>
+              </property>
+              <property name="text">
+               <string>B:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLabel" name="LUTLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(150,150,150);</string>
+              </property>
+              <property name="text">
+               <string>LUT:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="ProjectLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(150,150,150);</string>
+              </property>
+              <property name="text">
+               <string>Project:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="ShotLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(150,150,150);</string>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
+              </property>
+              <property name="text">
+               <string>Shot:</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::RichText</enum>
+              </property>
+              <property name="margin">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="UserLabel">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(150,150,150);</string>
+              </property>
+              <property name="text">
+               <string>User:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="firstFrameLineEdit">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="TimeLineSlider">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lastFramelineEdit">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="lcdNumber">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>18</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(30,30,30);
+border-radius: 4px;</string>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth">
+            <number>0</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="PlaypushButton">
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Play</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="LoopPushButton">
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Loop</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>LUT</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="LUTcomboBox">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>Project</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Linear</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>sRGB</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>rec709</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Film</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Custom</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1197</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <widget class="QMenu" name="menuFiles">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImport"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionFull_Screen"/>
+    <addaction name="actionActual_Pixels"/>
+    <addaction name="separator"/>
+    <addaction name="actionPlay"/>
+    <addaction name="actionNext_Frame"/>
+    <addaction name="actionPrevious_Frame"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFiles"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="ColorCorrect">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>400</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="windowTitle">
+    <string>Grade</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="colorCorrect" name="Grade"/>
+  </widget>
+  <widget class="QDockWidget" name="ImageHub">
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Image Hub</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>4</number>
+       </property>
+       <widget class="renderViewer" name="Renders">
+        <attribute name="title">
+         <string>Renders </string>
+        </attribute>
+       </widget>
+       <widget class="dailiesViewer" name="Dailies">
+        <attribute name="title">
+         <string>For Review</string>
+        </attribute>
+       </widget>
+       <widget class="sessionViewer" name="Session">
+        <attribute name="title">
+         <string>Session</string>
+        </attribute>
+       </widget>
+       <widget class="commentViewer" name="Comment">
+        <attribute name="title">
+         <string>Comment</string>
+        </attribute>
+       </widget>
+       <widget class="Queue" name="Queue">
+        <attribute name="title">
+         <string>Network</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="Synch">
+        <attribute name="title">
+         <string>Synch</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="InfoViewer">
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>100</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="windowTitle">
+    <string>Info Viewer</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="infoViewer" name="Info">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="commenetBrowserDoc">
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>111</height>
+    </size>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>Comments Browser</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="commentBrowser" name="dockWidgetContents_5">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionFull_Screen">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Full Screen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="actionActual_Pixels">
+   <property name="text">
+    <string>Actual_Pixels</string>
+   </property>
+   <property name="shortcut">
+    <string>Home</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionNext_Frame">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Next Frame</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionPrevious_Frame">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Previous Frame</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <zorder>ColorCorrect</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>renderViewer</class>
+   <extends>QWidget</extends>
+   <header>renderViewer</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>colorCorrect</class>
+   <extends>QWidget</extends>
+   <header>colorCorrect</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>sessionViewer</class>
+   <extends>QWidget</extends>
+   <header>sessionviewer</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>dailiesViewer</class>
+   <extends>QWidget</extends>
+   <header>dailiesViewer</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>commentViewer</class>
+   <extends>QWidget</extends>
+   <header>commentViewer</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>commentBrowser</class>
+   <extends>QWidget</extends>
+   <header>commentBrowser</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>infoViewer</class>
+   <extends>QWidget</extends>
+   <header>infoViewer</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Queue</class>
+   <extends>QWidget</extends>
+   <header>Queue</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PlaypushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>playGL()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>986</x>
+     <y>531</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>688</x>
+     <y>435</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>playGL()</slot>
+ </slots>
+</ui>

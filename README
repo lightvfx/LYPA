@@ -1,0 +1,16 @@
+#######################################
+# LYPA alpha v01 by Antoine Moulineau
+######################################
+
+Manage your renderfarm, and store your project info in a database.
+PLayback and color correct your openEXR images.
+
+runs on win7 64bit and python 2.7 64bit
+need additional python modules :
+openexr
+opencv
+numpy
+elixir
+sqlalchemy
+Pyqt 4.8
+

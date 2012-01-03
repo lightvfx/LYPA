@@ -1,0 +1,1020 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module model</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>model</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/users/antoinem/dropbox/flipper/beta01/model.py">c:\users\antoinem\dropbox\flipper\beta01\model.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="elixir.entity.html#Entity">elixir.entity.Entity</a>(<a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="model.html#Asset">Asset</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Dailie">Dailie</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Job">Job</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Node">Node</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Render">Render</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Sequence">Sequence</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Shot">Shot</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Task">Task</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#Texture">Texture</a>
+</font></dt><dt><font face="helvetica, arial"><a href="model.html#User">User</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Asset">class <strong>Asset</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Asset">Asset</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Asset-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Date</strong> = Property(Date, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>Description</strong> = Property(Description, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>PathBGEO</strong> = Property(PathBGEO, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>PathLXL</strong> = Property(PathLXL, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>PathOBJ</strong> = Property(PathOBJ, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>Shots</strong> = Property(Shots, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>Textures</strong> = Property(Textures, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<dl><dt><strong>type</strong> = Property(type, &lt;class 'model.Asset'&gt;)</dl>
+
+<dl><dt><strong>version</strong> = Property(version, &lt;class 'model.Asset'&gt;)</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Asset-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Asset-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Asset-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Asset-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Asset-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Asset-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Asset-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Asset-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Asset-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Asset-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Dailie">class <strong>Dailie</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Dailie">Dailie</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Dailie-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Comments</strong> = Property(Comments, &lt;class 'model.Dailie'&gt;)</dl>
+
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Dailie'&gt;)</dl>
+
+<dl><dt><strong>Renders</strong> = Property(Renders, &lt;class 'model.Dailie'&gt;)</dl>
+
+<dl><dt><strong>Status</strong> = Property(Status, &lt;class 'model.Dailie'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Dailie-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Dailie-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Dailie-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Dailie-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Dailie-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Dailie-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Dailie-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Dailie-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Dailie-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Dailie-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Job">class <strong>Job</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Job">Job</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Job-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Job'&gt;)</dl>
+
+<dl><dt><strong>Status</strong> = Property(Status, &lt;class 'model.Job'&gt;)</dl>
+
+<dl><dt><strong>Tasks</strong> = Property(Tasks, &lt;class 'model.Job'&gt;)</dl>
+
+<dl><dt><strong>Type</strong> = Property(Type, &lt;class 'model.Job'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Job-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Job-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Job-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Job-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Job-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Job-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Job-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Job-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Job-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Job-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Node">class <strong>Node</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Node">Node</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Node-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Node'&gt;)</dl>
+
+<dl><dt><strong>Status</strong> = Property(Status, &lt;class 'model.Node'&gt;)</dl>
+
+<dl><dt><strong>Tasks</strong> = Property(Tasks, &lt;class 'model.Node'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Node-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Node-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Node-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Node-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Node-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Node-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Node-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Node-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Node-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Node-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Render">class <strong>Render</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Render">Render</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Render-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Dailie</strong> = Property(Dailie, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Date</strong> = Property(Date, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Format</strong> = Property(Format, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Height</strong> = Property(Height, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>In</strong> = Property(In, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Job</strong> = Property(Job, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Out</strong> = Property(Out, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Path</strong> = Property(Path, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>ScenePath</strong> = Property(ScenePath, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>SeqName</strong> = Property(SeqName, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>ShotName</strong> = Property(ShotName, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Type</strong> = Property(Type, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>User</strong> = Property(User, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>Width</strong> = Property(Width, &lt;class 'model.Render'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<dl><dt><strong>version</strong> = Property(version, &lt;class 'model.Render'&gt;)</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Render-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Render-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Render-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Render-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Render-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Render-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Render-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Render-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Render-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Render-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Sequence">class <strong>Sequence</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Sequence">Sequence</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Sequence-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Sequence'&gt;)</dl>
+
+<dl><dt><strong>Renders</strong> = Property(Renders, &lt;class 'model.Sequence'&gt;)</dl>
+
+<dl><dt><strong>Shots</strong> = Property(Shots, &lt;class 'model.Sequence'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Sequence-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Sequence-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Sequence-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Sequence-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Sequence-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Sequence-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Sequence-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Sequence-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Sequence-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Sequence-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Shot">class <strong>Shot</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Shot">Shot</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Shot-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Assets</strong> = Property(Assets, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>CutIn</strong> = Property(CutIn, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>CutOut</strong> = Property(CutOut, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Description</strong> = Property(Description, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Grade</strong> = Property(Grade, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>In</strong> = Property(In, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Lut</strong> = Property(Lut, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Out</strong> = Property(Out, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Renders</strong> = Property(Renders, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Scan</strong> = Property(Scan, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Seq</strong> = Property(Seq, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Status</strong> = Property(Status, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>Thumbnail</strong> = Property(Thumbnail, &lt;class 'model.Shot'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Shot-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Shot-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Shot-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Shot-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Shot-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Shot-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Shot-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Shot-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Shot-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Shot-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Task">class <strong>Task</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Task">Task</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Task-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Command</strong> = Property(Command, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>In</strong> = Property(In, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>Log</strong> = Property(Log, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>Node</strong> = Property(Node, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>Out</strong> = Property(Out, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>ShortName</strong> = Property(ShortName, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>Status</strong> = Property(Status, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>Type</strong> = Property(Type, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>job</strong> = Property(job, &lt;class 'model.Task'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Task-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Task-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Task-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Task-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Task-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Task-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Task-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Task-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Task-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Task-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Texture">class <strong>Texture</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#Texture">Texture</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Texture-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Assets</strong> = Property(Assets, &lt;class 'model.Texture'&gt;)</dl>
+
+<dl><dt><strong>Format</strong> = Property(Format, &lt;class 'model.Texture'&gt;)</dl>
+
+<dl><dt><strong>Height</strong> = Property(Height, &lt;class 'model.Texture'&gt;)</dl>
+
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.Texture'&gt;)</dl>
+
+<dl><dt><strong>Path</strong> = Property(Path, &lt;class 'model.Texture'&gt;)</dl>
+
+<dl><dt><strong>Version</strong> = Property(Version, &lt;class 'model.Texture'&gt;)</dl>
+
+<dl><dt><strong>Width</strong> = Property(Width, &lt;class 'model.Texture'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Texture-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="Texture-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="Texture-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="Texture-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="Texture-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="Texture-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="Texture-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#Texture-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="Texture-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="Texture-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="User">class <strong>User</strong></a>(<a href="elixir.entity.html#Entity">elixir.entity.Entity</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="model.html#User">User</a></dd>
+<dd><a href="elixir.entity.html#Entity">elixir.entity.Entity</a></dd>
+<dd><a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a></dd>
+<dd><a href="__builtin__.html#object">__builtin__.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="User-__repr__"><strong>__repr__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Name</strong> = Property(Name, &lt;class 'model.User'&gt;)</dl>
+
+<dl><dt><strong>mapper</strong> = None</dl>
+
+<dl><dt><strong>table</strong> = None</dl>
+
+<hr>
+Data and other attributes inherited from <a href="elixir.entity.html#Entity">elixir.entity.Entity</a>:<br>
+<dl><dt><strong>__metaclass__</strong> = &lt;class 'elixir.entity.EntityMeta'&gt;<dd><tt><a href="elixir.entity.html#Entity">Entity</a>&nbsp;meta&nbsp;class.<br>
+You&nbsp;should&nbsp;only&nbsp;use&nbsp;it&nbsp;directly&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;define&nbsp;your&nbsp;own&nbsp;base&nbsp;class<br>
+for&nbsp;your&nbsp;entities&nbsp;(ie&nbsp;you&nbsp;don't&nbsp;want&nbsp;to&nbsp;use&nbsp;the&nbsp;provided&nbsp;'<a href="elixir.entity.html#Entity">Entity</a>'&nbsp;class).</tt></dl>
+
+<hr>
+Methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="User-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-delete"><strong>delete</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-expire"><strong>expire</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-expunge"><strong>expunge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-flush"><strong>flush</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;session&nbsp;methods</tt></dd></dl>
+
+<dl><dt><a name="User-from_dict"><strong>from_dict</strong></a>(self, data)</dt><dd><tt>Update&nbsp;a&nbsp;mapped&nbsp;class&nbsp;with&nbsp;data&nbsp;from&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list<br>
+structure.</tt></dd></dl>
+
+<dl><dt><a name="User-merge"><strong>merge</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-refresh"><strong>refresh</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-save"><strong>save</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-save_or_update"><strong>save_or_update</strong></a>(self, *args, **kwargs)</dt><dd><tt>#&nbsp;only&nbsp;exist&nbsp;in&nbsp;SA&nbsp;&lt;&nbsp;0.5<br>
+#&nbsp;IMO,&nbsp;the&nbsp;replacement&nbsp;(session.add)&nbsp;doesn't&nbsp;sound&nbsp;good&nbsp;enough&nbsp;to&nbsp;be&nbsp;added<br>
+#&nbsp;here.&nbsp;For&nbsp;example:&nbsp;"o&nbsp;=&nbsp;Order();&nbsp;o.add()"&nbsp;is&nbsp;not&nbsp;very&nbsp;telling.&nbsp;It's<br>
+#&nbsp;better&nbsp;to&nbsp;leave&nbsp;it&nbsp;as&nbsp;"session.add(o)"</tt></dd></dl>
+
+<dl><dt><a name="User-set"><strong>set</strong></a>(self, **kwargs)</dt></dl>
+
+<dl><dt><a name="User-to_dict"><strong>to_dict</strong></a>(self, deep<font color="#909090">={}</font>, exclude<font color="#909090">=[]</font>)</dt><dd><tt>Generate&nbsp;a&nbsp;JSON-style&nbsp;nested&nbsp;dict/list&nbsp;structure&nbsp;from&nbsp;an&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="User-update"><strong>update</strong></a>(self, *args, **kwargs)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><a name="User-get"><strong>get</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Return&nbsp;the&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;given&nbsp;identifier,<br>
+or&nbsp;None&nbsp;if&nbsp;not&nbsp;found.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).<a href="#User-get">get</a>(...)</tt></dd></dl>
+
+<dl><dt><a name="User-get_by"><strong>get_by</strong></a>(cls, *args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt><dd><tt>Returns&nbsp;the&nbsp;first&nbsp;instance&nbsp;of&nbsp;this&nbsp;class&nbsp;matching&nbsp;the&nbsp;given&nbsp;criteria.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:<br>
+session.query(MyClass).filter_by(...).first()</tt></dd></dl>
+
+<dl><dt><a name="User-update_or_create"><strong>update_or_create</strong></a>(cls, data, surrogate<font color="#909090">=True</font>)<font color="#909090"><font face="helvetica, arial"> from <a href="elixir.entity.html#EntityMeta">elixir.entity.EntityMeta</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="elixir.entity.html#EntityBase">elixir.entity.EntityBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-saveData"><strong>saveData</strong></a>()</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>belongs_to</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>entities</strong> = [&lt;class 'model.Shot'&gt;, &lt;class 'model.Asset'&gt;, &lt;c...ob'&gt;, &lt;class 'model.Task'&gt;, &lt;class 'model.Node'&gt;]<br>
+<strong>has_and_belongs_to_many</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>has_field</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>has_many</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>has_one</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>has_property</strong> = &lt;elixir.statements.PropertyStatement object&gt;<br>
+<strong>metadata</strong> = MetaData(Engine(sqlite:///J:/modoPipeline/assets/DB/JCOM.sqlite))<br>
+<strong>options_defaults</strong> = {'abstract': False, 'allowcoloverride': False, 'auto_primarykey': True, 'autoload': False, 'autosetup': False, 'identity': None, 'inheritance': 'single', 'mapper_options': {}, 'order_by': None, 'polymorphic': True, ...}<br>
+<strong>session</strong> = &lt;sqlalchemy.orm.scoping.ScopedSession object&gt;<br>
+<strong>using_mapper_options</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>using_options</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>using_options_defaults</strong> = &lt;elixir.statements.ClassMutator object&gt;<br>
+<strong>using_table_options</strong> = &lt;elixir.statements.ClassMutator object&gt;</td></tr></table>
+</body></html>
