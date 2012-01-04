@@ -1,3 +1,12 @@
+############################################################################################
+# LYPA alpha version 001 by Antoine Moulineau.
+#-------------------------------------------------------------------------------------
+# very simple mudule to read and write with JSON global and user variables in every modules.
+# 
+# Not used yet, needs integration.
+# some variables are still hardcoded.
+############################################################################################
+
 import sys
 import json
 import os
