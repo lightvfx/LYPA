@@ -1,26 +1,39 @@
 # -*- coding: utf-8 -*-
-#   Lypa 001 beta main entry point by Antoine Moulineau
+# 
+#   Lypa 001 alpha main entry point by Antoine Moulineau
 #  
-#setups the whole interface and the connections between all the modules. Needs a seperate entry point
-#QT is used for the Interface 
+#  setups the whole interface and the connections between all the modules. Needs a seperate entry point
+#   QT is used for the GUI
 ################################################################################
+
+
+
+
 
 import os,sys,string
 sys.path += ['.']
+import multiprocessing
+
+#############################
+# import pyqt 4.8
 from PyQt4 import QtCore,QtGui
+
+##############################
+# import other LYPA modules
 from Editors.FlipUI import Ui_MainWindow
-import Editors.nukeSS as nukeSS
 from Editors.GLviewport import *
 from LYPA_Import import *
 
+###############################
+# import database backend
 import model
-import multiprocessing
+
+###############################
+# import stylesheet
+import Editors.nukeSS as nukeSS
+
 
 #import sys
-
-
-# Create a class for our main window
-
 
 class Main(QtGui.QMainWindow):
     def __init__(self):
@@ -48,25 +61,23 @@ class Main(QtGui.QMainWindow):
         self.ui.Renders.setMainGUI(self)
         self.ui.Grade.setGL(self.GLviewer)
         self.ui.Renders.setGL(self.GLviewer)
-        
         self.ui.GLLayout.addWidget(self.GLviewer)
-        
         self.ui.tabWidget.setCurrentIndex(0)
         nukeSS.setStyleSheet(self)
         screen = QtGui.QDesktopWidget().screenGeometry()
-        #self.ui.InfoWidget.styleSheet("background-color: rgb(60,60,60)")
-        self.resize(screen.width(),screen.height() )
+        sself.resize(screen.width(),screen.height() )
         size =  self.geometry()
         self.move((screen.width()-size.width())/2, (screen.height()-size.height())/2)
-        #self.ui.TimeLineSlider.setRange(0, 20)
         self.ui.TimeLineSlider.setSingleStep(1)
-        #self.ui.TimeLineSlider.setPageStep(15 * 16)
         self.ui.TimeLineSlider.setTickInterval(1)
         self.ui.TimeLineSlider.setTickPosition(1)
         self.curProjectLUT = 2.2
         self.connect(self.ui.LUTcomboBox, QtCore.SIGNAL('activated(QString)'), self.onLUTcomboBoxActivated)
         self.ui.TimeLineSlider.valueChanged.connect(self.GLviewer.setCurrentFrame)
         self.ui.TimeLineSlider.valueChanged.connect(self.ui.lcdNumber.display)
+        ####################################
+        # init default parameters on openGL viewer
+        
         self.GLviewer.currentFrameChanged.connect(self.ui.TimeLineSlider.setValue)
         self.GLviewer.currentFrameChanged.connect(self.ui.lcdNumber.display)
         self.GLviewer.ExpChanged.connect(self.set_infobarExp)
@@ -141,6 +152,12 @@ class Main(QtGui.QMainWindow):
             self.importDialog.show()
             #sys.exit(self.importDialog.exec_())
             
+    
+    #######################################################################################
+    #LUT combo box on the viewer widget, for now the LUT is approximated with a GAMMA
+    #Full LUT support needs to be implemented in the GLviewport.py module, as a part of the 
+    # GLSL module.
+    ######################################################################################
     def onLUTcomboBoxActivated(self,text):
         if text == "Linear":
             print "Lut is:" + text
@@ -161,6 +178,11 @@ class Main(QtGui.QMainWindow):
             print "Lut is:" + text
             self.GLviewer.setLUT(self.curProjectLUT)
             
+    #################################################################
+    # when the play button is triggered
+    # for a smoother playback, the automatic refresh of the database
+    #is turned off when playback is active.
+    ################################################################
     def playGL(self):
         
         if self.toggleMe == 0:
@@ -187,7 +209,7 @@ class Main(QtGui.QMainWindow):
 
         
 if __name__ == "__main__":
-    print "Starting LYPA beta. Version 001 by Antoine Moulineau."
+    print "Starting LYPA alpha. Version 000 by Antoine Moulineau."
     print "******************************************************"
     print ""
     multiprocessing.freeze_support()
